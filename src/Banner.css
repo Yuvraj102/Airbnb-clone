@@ -1,0 +1,40 @@
+.banner {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/888_Brannan%2C_San_Francisco%2C_2016.jpg/1200px-888_Brannan%2C_San_Francisco%2C_2016.jpg")
+    center center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+}
+.banner__info {
+  background-color: black;
+  color: white;
+  padding-top: 25vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  width: 300px;
+}
+.banner__info > button {
+  background-color: #ff7779;
+  color: white;
+  text-transform: inherit; /*default material-ui does everything upper case inside*/
+  margin-top: 20px;
+  font-weight: 600;
+}
+.banner__info > h5 {
+  margin-top: 10px;
+}
+.banner__info > button:hover {
+  background-color: white;
+  color: #ff7779;
+}
+.banner__search {
+  display: flex;
+  flex-direction: column;
+}
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important; /*ignore all the subsequent rules !important*/
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+}

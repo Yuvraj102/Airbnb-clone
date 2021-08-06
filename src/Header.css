@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  margin-top: 15px; /*me*/
+}
+.header__icon {
+  object-fit: contain;
+  height: 50px;
+  margin-left: 20px;
+}
+.header__center {
+  display: flex;
+  align-items: center;
+  flex: 1; /*take up rest of the flex space*/
+  max-width: fit-content;
+  /* The fit-content behaves as fit-content(stretch) . In practice this means that the box will use the available space, but never more than max-content  */
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+.header__center > input {
+  border: none;
+  width: 250px;
+  padding: 10px;
+  outline-width: 0;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
